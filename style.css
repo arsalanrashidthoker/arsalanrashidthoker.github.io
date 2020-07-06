@@ -1,0 +1,425 @@
+/*var bgcolor: #4B878BFF;
+var color: #D01C1FFF;
+red: #ff2a2a
+b:#11273c*/
+@media screen and (min-width:900px){
+    li.menu{
+        display:none;
+    }
+    div#item span{
+        font-size: xx-large;
+    }
+    div.nav ul{
+        margin: 0 5% 5% 70%;
+        list-style: none;
+        padding: 10px;
+        /*position: fixed;*/
+        z-index:1;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1 minmax(20px, auto);
+        grid-gap: 20px;
+    }
+    div.reason{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, minmax(300px, auto));
+    }
+    div.banner{
+        height:740px;
+    }
+    div.ideal{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(1, 50px);
+    }
+    div.services{
+        color: red;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 350px);
+        grid-gap: 40px;
+    }
+    div.skills{
+        color: #ff2a2a;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 350px);
+        grid-gap: 40px;
+    }
+    div.carousell{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, minmax(500px, auto));
+    }
+    span#work{
+        font-size:90;
+    }
+    div.contact-body h3{
+        font-size: large;
+    }
+}
+@media screen and (max-width:900px){
+    li.menu{
+        display:block;
+    }
+    div.contact-body h3{
+        font-size: 4vw;
+    }
+    div.nav ul{
+        margin: 0 5% 5% 70%;
+        list-style: none;
+        padding: 10px;
+        /*position: fixed;*/
+        z-index:1;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4,minmax(20px, auto));
+        grid-gap: 20px;
+    }
+    div#item span{
+        font-size: large;
+    }
+    div.reason{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, minmax(300px, auto));
+    }
+    div.banner{
+        height: 900px;
+    }
+    div.ideal{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 50px);
+    }
+    div.services{
+        color: red;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 350px);
+        grid-gap: 40px;
+    }
+    div.skills{
+        color: #ff2a2a;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 350px);
+        grid-gap: 40px;
+    }
+    div.carousell{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, minmax(500px, auto));
+    }
+    span#work{
+        font-size:15vw;
+    }
+}
+p a{
+    color: red;
+    cursor: pointer;
+}
+button a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+h1{
+    font-weight: bold;
+    margin-top:0;
+}
+h3{
+    font-weight: lighter;
+}
+div.nav{
+    background-color: red;
+    z-index:1;
+}
+div.carousell{
+    width: 80%;
+    margin: 10px 10% 10px 10%;
+    border-radius: 10px;
+    padding: 10px;
+}
+div#text{
+    text-align:center;
+    margin-top: 30%;
+}
+div#text h3, h2{
+    color:#11273c;
+}
+div#text h3{
+    font-weight: lighter;
+}
+div#image img{
+    align: center;
+    width: 100%;
+    height: 80%;
+    position: relative;
+    float: right;
+    margin-top:10%;
+}
+div.banner-contact h1{
+    text-align: center;
+    padding:10%;
+    font-size: 8vw;
+}
+div.banner-about h1{
+    text-align: center;
+    padding:10%;
+    font-size: 8vw;
+}
+div.banner-contact{
+    margin:0;
+    background-image: url(img/contact.jpg);
+    background-position: center;
+    width: 100%;
+    height: 440px;
+    opacity: 1;
+    color: white;
+    font-family: Verdana;
+    text-align: center;
+    z-index:0;
+}
+div.contact-body{
+    text-align: center;
+    margin: 10px 10% 10px 10%;
+    padding:20px;
+}
+div.contact-body h2{
+    color: #11273c;
+    font-size: large;
+    font-weight: lighter;
+}
+div.contact-body div.reason h2{
+    color: #11273c;
+}
+div.banner-about h1{
+    text-align: center;
+    padding:10%;
+}
+div.banner-about{
+    margin:0;
+    background-image: url(img/about.jpg);
+    background-position: center;
+    width: 100%;
+    height: 440px;
+    opacity: 1;
+    color: white;
+    font-family: Verdana;
+    text-align: center;
+    z-index:0;
+}
+div.contact h3{
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 6px;
+}
+div.info h1{
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
+div.contact-body h1 a{
+    color: #11273c;
+}
+div.contact-body h1 a:hover{
+    text-decoration:none;
+    color:#ff2a2a;
+}
+p.left{
+    text-align: right;
+    position:relative;
+    top: 40px;
+    margin-right: 10px;
+}
+p.left{
+    color: white;
+}
+div.info h1 a:hover{
+    text-decoration:none;
+    color:#ff2a2a;
+}
+div.contact-ill img{
+    width:100%;
+}
+div.footer{
+    width: 100%;
+}
+div.contact{
+    background-color: #ff2a2a;
+    height: 60px;
+}
+div.info{
+    margin-top: -20px;
+    background-color: #11273c;
+    height: 120px;
+}
+h1{
+    text-align: center;
+}
+div.reason h4{
+    font-weight: lighter;
+}
+div.contact-body div.reason{
+    padding: 10px;
+    text-align: center;
+    margin: 10px 0px 10px 0;
+    color: #11273c;
+}
+div.reason{
+    padding: 10px;
+    text-align: center;
+    margin: 10px 10% 10px 10%;
+    color: #11273c;
+}
+
+hr{
+    color:#11273c;
+    height: 1px;
+    background-color:#11273c;
+}
+body{
+    margin:0;
+    font-family: Verdana;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+div.banner{
+    margin:0;
+    background-image: url(banner.jpg);
+    background-position: center;
+    width: 100%;
+    opacity: 1;
+    color: white;
+    font-family: Verdana;
+    text-align: center;
+    z-index:0;
+}
+div.ideal{
+    margin: 10px;
+    grid-gap:40px;
+}
+div#item{
+    /*background-color: #ff1a1a;*/
+    border: 2px solid #ff1a1a;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    height: 70px;
+    padding:10px;
+}
+div#item:hover{
+    background-color: #ff1a1a;
+}
+.fas{
+    position: relative;
+    bottom: 25px;
+    font-size: 40px;
+}
+/*@keyframe bg{
+    from{background-color:rgba(0,0,0,0)};
+    to{background-color:rgba(0,0,0,0.8)};
+}*/
+
+div.nav{
+    width: 100%;
+    position:fixed;
+    height: 60px;
+    background-color:transparent;
+}
+div.nav:hover{
+    background-color:rgba(0,0,0,0.8);
+}
+div.nav li a:hover{
+    color: #ff2a2a;
+}
+div.nav li{
+    color: white;
+    margin: 10px;
+}
+div#maintext h1{
+    padding: 10px;
+    z-index:0;
+}
+span#work{
+    color: #ff2a2a;
+}
+button.main{
+    width:35%;
+    height:50px;
+    background-color: inherit;
+    color: white;
+    font-size:2vw;
+    border: none;
+    padding: 10px;
+    transition: border 4s linear;
+}
+button.main:hover{
+    padding: 10px 50px 10px 50px;
+    cursor: pointer;
+    border: 2px solid #ff2a2a;
+    border-radius: 5px;
+    color: #ff2a2a;
+    width: 40%;
+}
+div.services :nth-child(1){
+    background-image: url(img/1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+div.services :nth-child(2){
+    background-image: url(img/2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+div.services :nth-child(3){
+    background-image: url(img/3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+div.services :nth-child(4){
+    background-image: url(img/4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+div#service h1{
+    text-align:center;
+    color: white;
+    font-weight: bold;
+    background: none;
+}
+div#service h3{
+    background: none;
+    color: white;
+    font-weight: lighter;
+}
+div#service{
+    border-radius: 10px;
+}
+div.services img{
+    width:100%;
+    height:100%;
+    margin:0;
+}
+div.skills, div.services{
+    margin: 10px 10% 10px 10%;
+}
+div#skill{
+    text-align:center;
+    border: 2px solid black;
+}
+div#maintext h1 span{
+    border-right: 4px solid #ff2a2a;
+}
