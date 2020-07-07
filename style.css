@@ -3,6 +3,12 @@ var color: #D01C1FFF;
 red: #ff2a2a
 b:#11273c*/
 @media screen and (min-width:900px){
+    div.projects{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, minmax(400px, auto));
+        grid-gap:10px;
+    }
     li.menu{
         display:none;
     }
@@ -64,6 +70,12 @@ b:#11273c*/
     }
 }
 @media screen and (max-width:900px){
+    div.projects{
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, minmax(400px, auto));
+        grid-gap:10px;
+    }
     li.menu{
         display:block;
     }
@@ -123,6 +135,30 @@ b:#11273c*/
     span#work{
         font-size:15vw;
     }
+}
+div.projects{
+    margin: 10px 10% 10px 10%;
+    padding:10px;
+    text-align:center;
+}
+div.projects a{
+    color: black;
+    text-decoration:none;
+}
+div.projects a:hover{
+    text-decoration:none;
+    color:white;
+}
+div#detail button{
+    background-color: #fff;
+    border-radius: 10px;
+    width:50%;
+    padding:10px;
+}
+div#detail button:hover{
+    color:white;
+    background-color:red;
+    border: 2px solid #ff2a2a;
 }
 p a{
     color: red;
